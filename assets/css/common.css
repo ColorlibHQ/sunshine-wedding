@@ -957,31 +957,24 @@ nav.navbar h2 span {
 
 .hero-banner {
     position: relative;
-    padding: 150px 0 80px !important;
+    padding: 190px 0 80px !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 400px;
+    height: 500px;
     z-index: 0;
+    margin: 0 50px;
 }
 .hero-banner::before {
     position: absolute;
     content: "";
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5db2ff+0,7db9e8+100&1+24,0+96 */
-    background: -moz-linear-gradient(left, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db2ff', endColorstr='#007db9e8',GradientType=1 );
-    /* IE6-9 */
+    background: #fff;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 1;
+    opacity: .1;
 }
 .hero-banner .align-items-center {
     display: block;
@@ -994,10 +987,9 @@ nav.navbar h2 span {
     padding: 0;
 }
 .hero-banner h2 {
-    font-size: 50px;
-    font-weight: 600;
-    color: #ffffff;
-    text-transform: capitalize;
+    font-size: 80px;
+    font-weight: 400;
+    color: #C78665;
 }
 .banner-breadcrumb .breadcrumb {
     background: none;
@@ -1056,10 +1048,15 @@ li.breadcrumb-item.active a, li.breadcrumb-item a {
     font-size: 13px;
     background: 0 0;
   }
-  
-  .wpcf7-form textarea {
-    border-radius: 12px;
-    height: 100%!important;
+  section.contact-section .wpcf7-form .form-control {
+    height: auto;
+}
+  .attending_area .main_attending_area .popup_box .boxed_btn3 {
+    cursor: pointer;
+    padding: 9px;
+  } 
+  .attending_area .main_attending_area .popup_box {
+      padding-bottom: 20px;
   }
   .messege .wpcf7-form textarea {
     border-radius: 0;

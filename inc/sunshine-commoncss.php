@@ -27,7 +27,7 @@ function sunshine_common_custom_css(){
 		$headerTop_bg     		  = '';
 		$navbarBgColor     		  = sunshine_opt( 'sunshine_navbar_bg_color' ) != '#082b49' ? sunshine_opt( 'sunshine_navbar_bg_color') : '';
 		$headerTop_col     		  = sunshine_opt( 'sunshine_top_header_color' );
-
+		
 		$headerTopBg      		  = sunshine_opt( 'sunshine_top_header_bg_color');
 		$headerBg          		  = sunshine_opt( 'sunshine_header_bg_color') != '#ffffff' ? sunshine_opt( 'sunshine_header_bg_color') : '';
 		$menuColor          	  = sunshine_opt( 'sunshine_header_menu_color' ) != '#131313' ? sunshine_opt('sunshine_header_menu_color') : '';
@@ -40,15 +40,15 @@ function sunshine_common_custom_css(){
 		$footerwbgColor     	  = sunshine_opt( 'sunshine_footer_widget_bg_color' );
 		$footerwHeadColor   	  = sunshine_opt('sunshine_footer_widget_heading_color');
 		$footerwTextColor   	  = sunshine_opt('sunshine_footer_widget_text_color');
-		$footerwanchorcolor 	  = sunshine_opt('sunshine_footer_widget_anchor_color') != '#ffffff' ? sunshine_opt('sunshine_footer_widget_anchor_color') : '';
-		$footerwanchorhovcolor    = sunshine_opt('sunshine_footer_widget_anchor_hover_color') != '#ffffff' ? sunshine_opt('sunshine_footer_widget_anchor_hover_color') : '';
+		$footerwanchorcolor 	  = sunshine_opt('sunshine_footer_widget_anchor_color') != '#1f1f1f' ? sunshine_opt('sunshine_footer_widget_anchor_color') : '';
+		$footerwanchorhovcolor    = sunshine_opt('sunshine_footer_widget_anchor_hover_color') != '#c78665' ? sunshine_opt('sunshine_footer_widget_anchor_hover_color') : '';
 		
 		$fofbg					  = sunshine_opt('sunshine_fof_bg_color');
 		$foftonecolor			  = sunshine_opt('sunshine_fof_textone_color');
 		$fofttwocolor			  = sunshine_opt('sunshine_fof_texttwo_color');
 
 		$bannerBtnHeaderSpanColor = $themeColor != '#ff5e13' ? $themeColor : '';
-		$footerAncDefColor 		  = sunshine_opt('sunshine_footer_widget_anchor_color') != '#9e9e9e' ? sunshine_opt('sunshine_footer_widget_anchor_color') : '';
+		$footerAncDefColor 		  = sunshine_opt('sunshine_footer_widget_anchor_color') != '#1f1f1f' ? sunshine_opt('sunshine_footer_widget_anchor_color') : '';
 		$footerAncDefHovColor 	  = $footerwanchorhovcolor != '#bababa' ? $footerwanchorhovcolor : $themeColor;
 
 		$customcss ="			
@@ -194,6 +194,9 @@ function sunshine_common_custom_css(){
 			.main_menu ul li a:hover:before, .main_menu ul.navbar-nav li a::before, .header-area .main-header-area .main-menu ul li a:hover, .header-area .main-header-area.sticky .main-menu ul li a::before {
 				color: {$menuHoverColor}	
 			}
+			.header-area .main-header-area .main-menu ul li a::before {
+				background: {$menuHoverColor}
+			}
 			.main_menu.menu_fixed .main-menu-item ul li .nav-link:not(.dropdown-item):hover
 			{
 			   color: {$menuFixedHoverColor} !important;
@@ -231,18 +234,18 @@ function sunshine_common_custom_css(){
 				border-color: {$footerwTextColor}
 			}
 
-			.footer-area .social_icon a, .footer-area .single-footer-widget ul li a, .footer_Part .footer_menu a, .footer_Part .social_icon a, .footer .footer_top .footer_widget ul li a, .footer .footer_top .footer_widget:not(.widget_nav_menu) a, .footer_area .footer-bottom .social_links ul li a, .footer_area .footer_widget form button
+			.footer-area .social_icon a, .footer-area .single-footer-widget ul li a, .footer_Part .footer_menu a, .footer_Part .social_icon a, .footer .footer_top .footer_widget ul li a, .footer .footer_top .footer_widget:not(.widget_nav_menu) a, .footer_area .footer-bottom .social_links ul li a, .footer_area .footer_widget form button, .footer .footer_top ul li a
 			{
 			   color: {$footerwanchorcolor};
 			}
-			.footer_Part .footer_menu a:hover, .footer_Part .social_icon a:hover, .footer .footer_top .footer_widget ul li a:hover, .footer .footer_top .footer_widget:not(.widget_nav_menu) a:hover, .footer_area .single-footer-widget ul li a:hover, .footer_area .footer_widget form button
+			.footer_Part .footer_menu a:hover, .footer_Part .social_icon a:hover, .footer .footer_top .footer_widget ul li a:hover, .footer .footer_top .footer_widget:not(.widget_nav_menu) a:hover, .footer_area .single-footer-widget ul li a:hover, .footer_area .footer_widget form button, .footer .footer_top ul li a:hover
 			{
 			   color: {$footerwanchorhovcolor};
 			}
 			.footer_area .footer-bottom .social_links ul li a:hover {
 				background: {$footerwanchorhovcolor};
 			}
-			.footer-area .copyright_part_text .footer-text > a, .footer_Part .copyright_part p > a, .footer .copy-right_text .copy_right a, .footer_area .copyright_text p a, .footer_area .footer-bottom .copyright .footer-text a, .footer .footer_copy_right p a
+			.footer .copy-right_text .copy_right a
 			{
 			   color: {$footerAncDefColor};
 			}

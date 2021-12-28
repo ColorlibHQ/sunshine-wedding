@@ -16,8 +16,8 @@ $headerimg          = get_header_image();
 
 <section class="hero-banner zigzag_bg_2" <?php echo sunshine_inline_bg_img( esc_url( $headerimg ) ); ?>>
     <div class="container">
-        <div class="row justify-content-between">
-            <div class="breadcrumb_tittle">
+        <div class="row justify-content-center">
+            <div class="breadcrumb_tittle text-center">
                 <h2>
                     <?php
                     if ( is_category() ) {
@@ -47,12 +47,6 @@ $headerimg          = get_header_image();
                     }
                     ?>
                 </h2>
-
-                <?php
-                    if ( function_exists( 'sunshine_breadcrumbs' ) ) {
-                        sunshine_breadcrumbs();
-                    }
-                ?>
             </div>
         </div>
     </div>

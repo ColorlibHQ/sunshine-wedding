@@ -35,30 +35,6 @@ $panels = array(
 
 
 $sections = array(
-
-    /**
-     * General Section
-     */
-    array(
-        'id'   => 'sunshine_general_section',
-        'args' => array(
-            'title'    => esc_html__( 'General', 'sunshine' ),
-            'panel'    => 'sunshine_theme_options_panel',
-            'priority' => 1,
-        ),
-    ),
-
-    /**
-     * Social Profiles Section
-     */
-    array(
-        'id'   => 'sunshine_social_section',
-        'args' => array(
-            'title'    => esc_html__( 'Social Profiles', 'sunshine' ),
-            'panel'    => 'sunshine_theme_options_panel',
-            'priority' => 2,
-        ),
-    ),
     
     /**
      * Header Section
