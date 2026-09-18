@@ -115,3 +115,15 @@ require_once( SUNSHINE_DIR_PATH_INC . 'class-epsilon-init-dashboard.php' );
  */
 
 $Sunshine = new Sunshine();
+
+/**
+ * Editor and markup support this theme predates.
+ */
+if ( ! function_exists( 'sunshine_wedding_modern_supports' ) ) {
+	function sunshine_wedding_modern_supports() {
+		add_theme_support( 'responsive-embeds' );
+		add_theme_support( 'align-wide' );
+		add_theme_support( 'editor-styles' );
+	}
+	add_action( 'after_setup_theme', 'sunshine_wedding_modern_supports', 20 );
+}
