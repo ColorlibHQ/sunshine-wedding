@@ -113,13 +113,10 @@ $('.testmonial_active').owlCarousel({
 	});
   
   // wow js
-  new WOW().init();
+  ColorlibUI.reveal('.wow');
 
   // counter 
-  $('.counter').counterUp({
-    delay: 10,
-    time: 10000
-  });
+  ColorlibUI.counter('.counter', { time: 10000 });
 
 /* magnificPopup img view */
 $('.popup-image').magnificPopup({
@@ -231,7 +228,7 @@ dots:false,
 });
 
 if (document.getElementById('default-select')) {
-  $('select').niceSelect();
+  ColorlibUI.enhanceSelects('select');
 }
 
   //about-pro-active
