@@ -208,6 +208,44 @@
     }
   });
 
+  // The companion's Clients widget prints .brand_active (underscore), which the
+  // call above never matched, so its carousel only ran in the Elementor editor.
+  // Same options as the widget's editor script, so the page matches the preview.
+  UI.owl('.brand_active', {
+    loop: true,
+    margin: 0,
+    items: 1,
+    autoplay: true,
+    navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+    nav: false,
+    dots: false,
+    autoplayHoverPause: true,
+    autoplaySpeed: 800,
+    responsive: {
+      0: {
+        items: 2,
+        dots: false,
+        nav: false
+      },
+      767: {
+        items: 4,
+        dots: false,
+        nav: false
+      },
+      992: {
+        items: 5,
+        nav: false
+      },
+      1200: {
+        items: 6,
+        nav: false
+      },
+      1500: {
+        items: 6
+      }
+    }
+  });
+
   // blog-dtails-page
 
   //project-active

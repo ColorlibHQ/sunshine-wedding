@@ -210,12 +210,6 @@ final class Sunshine {
 					'version'    => '1.0',
 				),
 				array(
-					'handler'    => 'sunshine-wedding-gijgo-css',
-					'file'       => $cssPath . 'gijgo.css',
-					'dependency' => array(),
-					'version'    => '1.0',
-				),
-				array(
 					'handler'    => 'sunshine-wedding-slicknav-css',
 					'file'       => $cssPath . 'slicknav.css',
 					'dependency' => array(),
@@ -251,7 +245,7 @@ final class Sunshine {
 					'handler'    => 'sunshine-wedding-custom-js',
 					'file'       => $jsPath . 'main.js',
 					'dependency' => array( 'masonry', 'sunshine-ui-js' ),
-					'version'    => $this->sunshine_version . '-s2',
+					'version'    => $this->sunshine_version . '-s3',
 					'in_footer'  => true,
 				),
 
