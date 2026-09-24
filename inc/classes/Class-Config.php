@@ -225,7 +225,7 @@ final class Sunshine {
 					'handler'    => 'sunshine-wedding-main-style',
 					'file'       => $cssPath . 'style.css',
 					'dependency' => array(),
-					'version'    => $this->sunshine_version,
+					'version'    => $this->sunshine_version . '-s3',
 				),
 				array(
 					'handler' => 'sunshine-wedding-sunshine-style',
